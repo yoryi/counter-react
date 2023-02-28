@@ -5,12 +5,18 @@ function Header() {
   const handleIncrement = () => {
     setCounter(counter + 1)
   }
+  const handleDecrement = () => {
+    setCounter(counter - 1)
+  }
 
   return (
     <div className='😀'>
-      <p>Númer de click: {counter}</p>
+      <button onClick={handleDecrement}>
+        -
+      </button>
+      <p>Número de click: {counter}</p>
       <button onClick={handleIncrement}>
-        Click me
+        +
       </button>
     </div>
   );
